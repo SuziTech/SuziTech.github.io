@@ -1,0 +1,42 @@
+How to use it:
+
+Embed an audio into your html page using HTML5 Audio element.
+1. <audio src="assets/sample.mp3" id="audio" controls>HTML5 Audio element not supported</audio>
+
+Create an Html5 canvas element for the audio visualizer.
+1. <canvas id="canvas" width="800" height="350"></canvas>
+
+Load the core JavaScript library at the bottom of your html page.
+1. <script src="main.js"></script>
+
+Style the audio spectrum visualizer.
+view source
+
+01
+.bar-wrapper {
+02
+  height: 300px;
+03
+  position: relative;
+04
+}
+05
+ 
+06
+.bar {
+07
+  position: relative;
+08
+  bottom: 0;
+09
+  width: 5px;
+10
+  display: inline-block;
+11
+  border: 1px solid red;
+12
+  height: 5px;
+13
+  border-bottom: 3px solid #fff;
+14
+}

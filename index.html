@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-gb">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+		<meta name="description" content="A music site by Suzanne">
+		<meta name="author" content="Suzanne">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+		<link rel="stylesheet" href="styles/normalize.css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="styles/style.css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" src="scripts/main.js"></script>
+    <title>Suzanne's Music Site</title>	
+  </head>
+  <body>
+    <header>
+	  <div class="top-line" background-image="images/sky.png">
+	    <h1 class="title">Music Music Music!</h1>
+			<ul class="users">
+				<li><a href="register.html">Register</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+	  </div>
+      <nav class="navgtion">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="songs.html">Songs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+					<li><a href="forum.html">Forum</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="upper">
+				<div class="headline">
+					<!-- scrolling LED headline section - TBD -->
+				</div>
+				<div class="pictures">
+					<img src="images/instrument.png" height="150" width="300" alt="An image of a musical instrument"/>
+					<img src="images/sparse-studio.jpg" height="150" width="300" alt="An image of a studio"/>
+					<img src="images/singer.jpg" height="150" width="300" alt="An image of a singer"/>
+				</div>
+      </section>
+      <section class="middle">
+			  <div class="juke-selector">
+					<button class="dropbtn">Songs</button>
+					  <div class="dropdown-content">
+					    <a href="#">- - - - - -</a>
+					    <a href="javascript:play('assets/We Are Punk Grrrls.mp3')">We Are Punk Grrrls</a>
+					    <a href="javascript:play('assets/Urban Battlefield.mp3')">Urban Battlefield</a>
+					    <a href="javascript:play('assets/Let's Hang Out.mp3')">Let's Hang Out</a>
+					    <a href="javascript:play('assets/Economic Growth Obsession.mp3')">Economic Growth Obsession</a>
+					    <a href="javascript:play('assets/Moshpit Mayhem.mp3')">Moshpit Mayhem</a>
+					  </div>
+				</div>
+				<div class="jukebox">
+					<audio src="assets/We Are Punk Grrrls.mp3" id="audio" controls>HTML5 Audio element not supported</audio>
+					<canvas id="canvas" width="600" height="300"></canvas>
+				</div>
+      </section>
+      <section class="lower">
+        <div class="forum">
+					<p>This is where the Forum goes...</p>
+				</div>
+				<div class="joined">
+					<p>This is where the Recently Joined data goes...</p>
+				</div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2017</p>
+      <p>Website by Suzanne</p>
+    </footer>
+  </body>
+	<script src="scripts/main.js"></script>
+</html>
